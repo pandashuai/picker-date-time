@@ -1,0 +1,21 @@
+<picker-date-time sYear="{{2020}}" eYear="{{2030}}" type="yyyy-mm-dd hh:mm" cuDateTime="{{cuDateTime}}" bind:change="onDateTimeChange">
+	<!-- 主体内容在这里写 -->
+	<view class="tui-picker-content">
+		<view class="tui-picker-name">日期时间选择器（精确到分）</view>
+		<view class="tui-picker-detail">
+			选择日期时间: {{cuDateTime || 'xxxx-xx-xx xx:xx'}}
+		</view>
+	</view>
+</picker-date-time>
+
+<text>\r\n</text>
+
+<picker-date-time sYear="{{2020}}" eYear="{{2021}}"  cuDateTime="{{cuDateTime1}}" bind:change="onDateTimeChange1" >
+	<!-- 主体内容在这里写 -->
+	<view class="tui-picker-content">
+		<view class="tui-picker-name">日期时间选择器（精确到秒）</view>
+		<view class="tui-picker-detail">
+			选择日期时间: {{cuDateTime1 || 'xxxx-xx-xx xx:xx'}}
+		</view>
+	</view>
+</picker-date-time>
